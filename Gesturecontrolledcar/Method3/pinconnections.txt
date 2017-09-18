@@ -1,0 +1,40 @@
+
+Receiver connection:
+arduino--------------l293d
+pin8-----------------pin2
+pin9-----------------pin7
+pin10----------------pin15
+pin11----------------pin10
+gnd------------------pin4,pin5,pin12,pin13
+5v------------------pin1,pin16,pin9
+
+
+L293d other connections:
+l293d------------ dev
+pin3-------------output1 of motor1 
+pin6-------------output2 of motor1 
+pin14------------output1 of motor2 
+pin11------------output2 of motor2
+
+ARDUINO---------------Rf 433mhz receiver
++5v------------------vcc
+gnd------------------gnd
+D12-------------------data(pin2-lhs of gnd)
+
+use 9v battery to power the arduino using connector.
+
+Transmitter connection:
+
+
+ARDUINO--------------Rf433 mhz transmitter
++5v------------------vcc
+gnd------------------gnd
+D12------------------data
+
+arduino-----------accelerometer
+3.3v--------------3v3
+gnd---------------gnd
+A0----------------X
+A1---------------Y
+
+use 9v battery to power the arduino using connector.

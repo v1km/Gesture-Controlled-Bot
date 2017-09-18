@@ -1,0 +1,57 @@
+Components:
+Arduino X 2 (any)
+HC05 bluetooth module X 2
+Accelerometer (mine is MMA 7361)
+Dc motor X 2
+L2293d ic driver 
+9v Batteries X  2
+Wires
+
+
+Transmitter Conections:
+Arduino--------------Accelerometer
+3.3v-----------------3v3
+gnd------------------gnd
+A0-------------------Xout
+A1-------------------Yout
+
+Arduino--------------HC05
+5V-------------------5V
+GND------------------GND
+RX-------------------TX
+TX-------------------RX
+
+use a connector to connect 9v battery to arduino.
+
+Receiver Connections:
+Arduino----------------HC05
+5v---------------------5v
+gnd-------------------gnd
+RX--------------------TX
+TX--------------------RX
+
+
+Arduino-------------L293d
+5v-----------------pin1,pin16,pin9
+gnd----------------pin4,pin5,pin12,pin13
+pin8---------------pin2
+pin9---------------pin7
+pin10--------------pin15
+pin11--------------pin10
+vin----------------pin8
+use a connector to connect 9v battery to arduino.
+
+
+L293d-------motors
+pin3--------input1 of motor1 
+pin6--------input2 of motor1
+pin11-------input1 of motor2
+pin14-------input2 of motor2
+
+
+
+Mount the components of receiver side on a chassis with proper seal and connect the tyres to the motors.
+TO AVOID THE CHASSIS AND TYRES YOU CAN TAKE A TOY AND MOUNT THE CIRCUIT TO ITS MOTOR AND PLAY WITH IT.
+
+
+
